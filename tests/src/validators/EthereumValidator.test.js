@@ -17,7 +17,6 @@ describe('EthereumValidator', () => {
     isAppliedFor(SUPPORTED_CURRENCIES.ethereum_classic);
     isAppliedFor(SUPPORTED_CURRENCIES.omise_go);
     isAppliedFor(SUPPORTED_CURRENCIES.augur);
-    isAppliedFor(SUPPORTED_CURRENCIES.eos);
     isAppliedFor(SUPPORTED_CURRENCIES.fuel);
     isAppliedFor(SUPPORTED_CURRENCIES.status);
     isAppliedFor(SUPPORTED_CURRENCIES.singularDTV);
@@ -57,10 +56,6 @@ describe('EthereumValidator', () => {
 
       test('Shold validate Golem address', () => {
         validAddress('0x876eabf441b2ee5b5b0554fd502a8e0600950cfa');
-      });
-
-      test('Shold validate EOS address', () => {
-        validAddress('0xb90f51c4011eac7bd9e42dbdd608cac8d19ff0ce');
       });
 
       test('Shold validate FUEL address', () => {

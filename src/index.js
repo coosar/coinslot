@@ -5,6 +5,7 @@ import MoneroValidator from './validators/MoneroValidator';
 import RippleValidator from './validators/RippleValidator';
 import IotaValidator from './validators/IotaValidator';
 import StellarValidator from './validators/StellarValidator';
+import EosValidator from './validators/EosValidator';
 import SUPPORTED_CURRENCIES from './supportedCurrencies';
 
 const supportedValidators = [
@@ -14,6 +15,7 @@ const supportedValidators = [
   new RippleValidator(),
   new IotaValidator(),
   new StellarValidator(),
+  new EosValidator(),
   new DefaultValidator(),
 ];
 const supportedCurrencies = Object.values(SUPPORTED_CURRENCIES);
